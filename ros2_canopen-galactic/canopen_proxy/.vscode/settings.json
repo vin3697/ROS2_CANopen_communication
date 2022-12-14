@@ -1,0 +1,9 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/vip9le/canopen_ws/install/lely_core_libraries/lib/python3.8/site-packages",
+        "/home/vip9le/canopen_ws/build/canopen_utils",
+        "/home/vip9le/canopen_ws/install/canopen_utils/lib/python3.8/site-packages",
+        "/home/vip9le/canopen_ws/install/canopen_interfaces/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages"
+    ]
+}

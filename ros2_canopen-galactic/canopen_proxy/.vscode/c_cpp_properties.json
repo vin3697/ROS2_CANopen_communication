@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/vip9le/canopen_ws/install/canopen_402_driver/include/**",
+        "/home/vip9le/canopen_ws/install/canopen_proxy_driver/include/**",
+        "/home/vip9le/canopen_ws/install/canopen_base_driver/include/**",
+        "/home/vip9le/canopen_ws/install/canopen_core/include/**",
+        "/home/vip9le/canopen_ws/install/lely_core_libraries/include/**",
+        "/home/vip9le/canopen_ws/install/canopen_interfaces/include/**",
+        "/opt/ros/galactic/include/**",
+        "/home/vip9le/canopen_ws/src/ros2_canopen-galactic/canopen_402_driver/include/**",
+        "/home/vip9le/canopen_ws/src/ros2_canopen-galactic/canopen_base_driver/include/**",
+        "/home/vip9le/canopen_ws/src/ros2_canopen-galactic/canopen_core/include/**",
+        "/home/vip9le/canopen_ws/src/ros2_canopen-galactic/canopen_mock_slave/include/**",
+        "/home/vip9le/canopen_ws/src/ros2_canopen-galactic/canopen_proxy_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

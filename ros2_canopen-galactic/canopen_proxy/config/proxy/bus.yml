@@ -1,0 +1,46 @@
+#bus config name is the eds file for the slave
+
+master:
+  node_id: 1
+  driver: "ros2_canopen::MasterNode"
+  package: "canopen_core"
+  sync_period: 20000
+  heartbeat_producer: 1000 # Heartbeat every 1000 ms
+  heartbeat_consumer: true
+  start: true
+  start_nodes: true
+  start_all_nodes: false
+  reset_all_nodes: false
+  stop_all_nodes: false
+  boot_time: 0 # ms
+  
+
+proxy_device:
+  node_id: 2
+  dcf: "simple.eds"
+  dcf_path: "install/canopen_proxy/share/canopen_proxy/config/proxy/"
+  package: "canopen_proxy_driver"
+  driver: "ros2_canopen::ProxyDriver"
+  enable_lazy_load: "false"
+  rpdo:
+    1:
+      enabled: true
+      cob_id: auto
+      transmission: 0x01
+      inhibit_time: 0 # 100 us
+      event_timer: 0 # ms
+      mapping:
+        - {index: 0x4000, sub_index: 0}
+  tpdo:
+    1:
+      enabled: true
+      cob_id: auto
+      transmission: 0x01
+      inhibit_time: 0 # 100 us
+      event_timer: 0 # ms
+      sync_start: 0
+      mapping:
+        - {index: 0x4001, sub_index: 0}
+  heartbeat_producer: 100 # Heartbeat every 1000 ms
+  heartbeat_consumer: false
+  #heartbeat_producer: 0 # ms
