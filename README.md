@@ -10,3 +10,5 @@ CiA 402 : Motor Control
 The EDS file located at ros2_canopen-galactic/canopen_proxy/config/proxy has been edited by me accordingly so it functions properly with ROS2.
 
 The issue https://github.com/ros-industrial/ros2_canopen/issues/46 has been raised by me from different GitHub account and have successfully worked to resolve it.
+
+I have just included the packages used by me not the whole workspace.
